@@ -22,6 +22,7 @@ jobs:
     - name: DocFX Build
       run: |
         git clone https://github.com/gui-cs/Terminal.Gui.git
+        git fetch --all
         cd Terminal.Gui
         git checkout v2_develop
         dotnet tool install -g docfx
