@@ -3,6 +3,10 @@ name: Build and publish Terminal.Gui v2 API docs
 on:
   push:
     branches: [main]
+  repository_dispatch:
+      types: [v2_develop_push] 
+  # schedule:
+  #   - cron:  '30 5 * * *'
 
 permissions:
   id-token: write 
