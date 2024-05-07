@@ -29,6 +29,7 @@ jobs:
         git fetch --all
         cd Terminal.Gui
         git checkout v2_develop
+        dotnet build
         dotnet tool install -g docfx
         cd docfx
         docfx metadata
