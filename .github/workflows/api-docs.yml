@@ -29,7 +29,8 @@ jobs:
         git fetch --all
         cd Terminal.Gui
         git checkout v2_develop
-        dotnet build
+        Import-Module ./Scripts/Terminal.Gui.PowerShell.psd1
+        Build-Analyzers
         dotnet tool install -g docfx
         cd docfx
         docfx metadata
