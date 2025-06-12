@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   repository_dispatch:
-      types: [v2_develop_push] 
+      types: [v1_release_push] 
   # schedule:
   #   - cron:  '30 5 * * *'
 
@@ -28,7 +28,7 @@ jobs:
         git clone https://github.com/gui-cs/Terminal.Gui.git
         git fetch --all
         cd Terminal.Gui
-        git checkout v2_develop
+        git checkout v1_release
         Import-Module ./Scripts/Terminal.Gui.PowerShell.psd1
         dotnet tool install -g docfx
         cd docfx
