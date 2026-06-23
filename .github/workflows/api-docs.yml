@@ -25,7 +25,7 @@ jobs:
 
     - name: DocFX Build
       run: |
-        git clone https://github.com/gui-cs/Terminal.Gui.git
+        git clone https://github.com/tui-cs/Terminal.Gui.git
         git fetch --all
         cd Terminal.Gui
         git checkout v1_release
